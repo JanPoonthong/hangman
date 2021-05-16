@@ -7,6 +7,8 @@ can choose either one
 
 **Recommended: Graphical user interface**
 
+![Demonstration of hangman](demo.gif)
+
 ## Requirements
 
 ### Linux
