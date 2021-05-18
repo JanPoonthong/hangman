@@ -79,7 +79,7 @@ def display_hangman(status):
            |
            |
            -
-        """
+        """,
     ]
     return stages[status]
 

@@ -25,8 +25,21 @@ WORD_FONT = pygame.font.Font(COMICSHANNS, 40)
 
 # Game variables
 HANGMAN_STATUS = 0
-WORDS = ["IDE", "PYTHON", "DEVELOPER", "PYGAME", "VIM", "STRAGER", "RUBY",
-         "CPLUSPLUS", "TWITCH", "JAVASCRIPT", "HTML", "CSS", "NODEJS"]
+WORDS = [
+    "IDE",
+    "PYTHON",
+    "DEVELOPER",
+    "PYGAME",
+    "VIM",
+    "STRAGER",
+    "RUBY",
+    "CPLUSPLUS",
+    "TWITCH",
+    "JAVASCRIPT",
+    "HTML",
+    "CSS",
+    "NODEJS",
+]
 WORD = random.choice(WORDS)
 GUESSED = ["D", "Y", "I", "J", "A", "H"]
 CLICK = False
@@ -67,8 +80,10 @@ def draw():
         if visible:
             pygame.draw.circle(screen, BLACK, (a, b), RADIUS, 3)
             text = LETTER_FONT.render(ltr, True, BLACK)
-            screen.blit(text, (int(a - text.get_width() / 2), int(b
-                                                                  - text.get_height() / 2)))
+            screen.blit(
+                text,
+                (int(a - text.get_width() / 2), int(b - text.get_height() / 2)),
+            )
 
     # Draw word
     display_word = ""
@@ -88,14 +103,23 @@ def display_message(message):
 
     # You won or You lose
     text = WORD_FONT.render(message, True, BLACK)
-    screen.blit(text, (int(WIDTH / 2 - text.get_width() / 2), int(HEIGHT / 2
-                                                                  - text.get_height() / 2)))
+    screen.blit(
+        text,
+        (
+            int(WIDTH / 2 - text.get_width() / 2),
+            int(HEIGHT / 2 - text.get_height() / 2),
+        ),
+    )
 
     # The was word
     display_word = WORD_FONT.render(f"The word was {WORD}", True, BLACK)
-    screen.blit(display_word, (int(WIDTH / 2 - display_word.get_width() / 2),
-                               int(
-                                   HEIGHT / 2 - display_word.get_height() / 2 + 50)))
+    screen.blit(
+        display_word,
+        (
+            int(WIDTH / 2 - display_word.get_width() / 2),
+            int(HEIGHT / 2 - display_word.get_height() / 2 + 50),
+        ),
+    )
     pygame.display.update()
 
 
