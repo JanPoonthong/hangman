@@ -26,7 +26,7 @@ Instructions:
 
 1.  Run:
 
-        $ python3 main.py
+        $ python main.py
 
 ### Linux
 
