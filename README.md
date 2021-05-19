@@ -11,6 +11,23 @@ can choose either one
 
 ## Requirements
 
+### Windows
+
+Prerequisites:
+
+- [Python][python-download]
+- [Pygame][pygame-download]
+
+Instructions:
+
+1.  Download Pygame:
+
+        $ pip3 install pygame
+
+1.  Run:
+
+        $ python3 main.py
+
 ### Linux
 
 Prerequisites:
@@ -45,6 +62,7 @@ Instructions:
 
         $ python3 main.py
 
+[pygame-download]: https://www.pygame.org
 [pygame-download-linux]: https://www.pygame.org/wiki/GettingStarted#Unix%20Binary%20Packages
 [pygame-download-macos]: https://www.pygame.org/wiki/GettingStarted#Mac%20installation
 [python-download]: https://www.python.org/downloads/
